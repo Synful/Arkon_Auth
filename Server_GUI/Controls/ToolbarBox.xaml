@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="Server_GUI.Controls.ToolbarBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Server_GUI.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="25" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Border x:Name="dragMoveBar"
+                    CornerRadius="5,5,0,0"
+                    Grid.ColumnSpan="2"
+                    Background="#FF0E0E0E"
+                    MouseDown="dragMoveBar_MouseDown"/>
+
+        <Label Content="Arkon Server Console"
+                   Foreground="Aqua"
+                   FontFamily="Cascadia Mono"
+                   Margin="0,0,247,0"
+                   MouseDown="dragMoveBar_MouseDown"/>
+
+        <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,2,0">
+            <Button Style="{StaticResource toolbarbutton}" x:Name="miniBtn" Content="🗕" Margin="0,0,0,3" FontWeight="Bold" Width="20" Height="20"  Click="miniBtn_Click"/>
+            <Button Style="{StaticResource toolbarbutton}" x:Name="closeBtn" Content="✕" FontWeight="Bold" Width="20" Height="20" Click="closeBtn_Click"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

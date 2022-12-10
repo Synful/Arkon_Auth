@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Server_GUI.Controls.LoggerBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Server_GUI.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="255" d:DesignWidth="800">
+    <Grid>
+        <Border BorderThickness="0,1,0,0" BorderBrush="Aqua"/>
+        <RichTextBox Name="rtbLogger"
+                     Block.LineHeight="2.0"
+                     IsReadOnly="True"
+                     Background="Transparent"
+                     BorderThickness="0"
+                     FontFamily="Cascadia Mono">
+            <FlowDocument PageWidth="{Binding ElementName=rtbLogger, Path=ActualWidth}"/>
+        </RichTextBox>
+    </Grid>
+</UserControl>

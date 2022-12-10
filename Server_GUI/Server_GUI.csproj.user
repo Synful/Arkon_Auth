@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Controls\ToolbarBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Controls\CommandBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\LoggerBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\ServerInformation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\ToolbarBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Theme\ModernButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Theme\ToolbarButton.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

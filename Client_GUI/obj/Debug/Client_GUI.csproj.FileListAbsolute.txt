@@ -1,0 +1,11 @@
+E:\Projects\PC\Arkon_Auth\Client_GUI\bin\Debug\Client.exe.config
+E:\Projects\PC\Arkon_Auth\Client_GUI\bin\Debug\Client.exe
+E:\Projects\PC\Arkon_Auth\Client_GUI\bin\Debug\Client.pdb
+E:\Projects\PC\Arkon_Auth\Client_GUI\obj\Debug\Client_GUI.csproj.AssemblyReference.cache
+E:\Projects\PC\Arkon_Auth\Client_GUI\obj\Debug\Client_GUI.csproj.SuggestedBindingRedirects.cache
+E:\Projects\PC\Arkon_Auth\Client_GUI\obj\Debug\Client.MainForm.resources
+E:\Projects\PC\Arkon_Auth\Client_GUI\obj\Debug\Client.Properties.Resources.resources
+E:\Projects\PC\Arkon_Auth\Client_GUI\obj\Debug\Client_GUI.csproj.GenerateResource.cache
+E:\Projects\PC\Arkon_Auth\Client_GUI\obj\Debug\Client_GUI.csproj.CoreCompileInputs.cache
+E:\Projects\PC\Arkon_Auth\Client_GUI\obj\Debug\Client.exe
+E:\Projects\PC\Arkon_Auth\Client_GUI\obj\Debug\Client.pdb

@@ -1,0 +1,38 @@
+﻿<Window x:Class="Server_GUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:Server_GUI.Controls"
+        mc:Ignorable="d"
+        Title="Arkon Server" Height="450" Width="800"
+        AllowsTransparency="True" Background="Transparent"
+        WindowStyle="None" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="355"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Border CornerRadius="0,0,5,5" Grid.Row="1" Grid.RowSpan="2" Background="#FF191919"/>
+
+        <Grid Grid.Row="0">
+            <controls:ToolbarBox/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <controls:ServerInformation/>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <controls:LoggerBox/>
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <controls:CommandBox/>
+        </Grid>
+    </Grid>
+</Window>
