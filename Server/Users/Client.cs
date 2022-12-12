@@ -31,22 +31,18 @@ namespace Server.Users {
         // Property for the client's IP address
         public IPAddress ip {
             get {
-                if (socket != null) {
-                    // Return the IP address of the client's remote endpoint
-                    return ((IPEndPoint)this.socket.RemoteEndPoint).Address;
-                }
-                return null;
+                // Use a null-conditional operator to avoid checking if socket is null
+                // before accessing its properties
+                return ((IPEndPoint)this.socket?.RemoteEndPoint)?.Address;
             }
         }
 
         // Property for the client's port
         public int port {
             get {
-                if (socket != null) {
-                    // Return the port of the client's remote endpoint
-                    return ((IPEndPoint)this.socket.RemoteEndPoint).Port;
-                }
-                return 0;
+                // Use a null-conditional operator to avoid checking if socket is null
+                // before accessing its properties
+                return ((IPEndPoint)this.socket?.RemoteEndPoint)?.Port ?? 0;
             }
         }
 
